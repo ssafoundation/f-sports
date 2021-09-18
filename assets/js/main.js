@@ -1,6 +1,11 @@
 $(document).ready(function () {
   $(".hero__slider__image").owlCarousel({
     items: 1,
+    dots: false,
+    nav: false,
+  });
+  $(".owl-carousel").owlCarousel({
+    items: 4,
   });
 
   // ==============================
