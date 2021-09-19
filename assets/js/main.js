@@ -4,8 +4,17 @@ $(document).ready(function () {
     dots: false,
     nav: false,
   });
-  $(".owl-carousel").owlCarousel({
+  $(".fixer-slider-main-wrap").owlCarousel({
     items: 4,
+  });
+  $(".upcoming-match-list-wrap").owlCarousel({
+    items: 2,
+    margin: 20,
+    nav: true,
+    navText: [
+      "<img src='assets/img/left-arrow.svg'>",
+      "<img src='assets/img/right-arrow.svg'>",
+    ],
   });
 
   // ==============================
