@@ -16,7 +16,25 @@ $(document).ready(function () {
       "<img src='assets/img/right-arrow.svg'>",
     ],
   });
-
+  $(".best-player-slider-inner-wrap").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    navText: [
+      `<i class="fal fa-long-arrow-left"></i>`,
+      `<i class="fal fa-long-arrow-right"></i>`,
+    ],
+  });
+  $(".store-product-slider").owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 25,
+    nav: true,
+    navText: [
+      `<i class="fal fa-long-arrow-left"></i>`,
+      `<i class="fal fa-long-arrow-right"></i>`,
+    ],
+  });
   // ==============================
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
