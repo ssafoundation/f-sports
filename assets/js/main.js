@@ -44,4 +44,9 @@ $(document).ready(function () {
       $(".header-main-area").addClass("scroll-header");
     }
   });
+  jQuery(window).on("load", function () {
+    $("#status").fadeOut();
+    $("#preloader").delay(350).fadeOut("slow");
+    $("body").delay(350).css({ overflow: "visible" });
+  });
 });
