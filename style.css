@@ -27,10 +27,22 @@
 }
 
 /* ---------------------------------- */
-header.header__main__wrap {
+a.navbar-brand {
+  display: none;
+}
+
+a.navbar-brand img {
+  width: 60px;
+
+}
+
+.header__main__wrap {
   width: 100%;
-  background-color: #fff;
-  padding: 20px 0;
+  background: #fff;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  height: 60px;
 }
 
 header.header__main__wrap ul li a {
@@ -113,13 +125,10 @@ a.nav-link.desktop__site_logo:after {
 
 /* ============================== */
 
-section.hero__main__area {
+.hero__main__area {
   position: relative;
+  margin-top: 60px;
 }
-
-/* .hero__slider__image {
-  height: 600px;
-} */
 
 .hero__slider__image img {
   height: 100%;
